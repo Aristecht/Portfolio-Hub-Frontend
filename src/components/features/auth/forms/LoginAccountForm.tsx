@@ -56,7 +56,7 @@ export function LoginAccountForm() {
         toast.success(t("successToast"));
       }
     },
-    refetchQueries: ["FindProfile"],
+    refetchQueries: ["FindAuthProfile"],
     onError() {
       toast.error(t("errorToast"));
     },
