@@ -1,0 +1,3 @@
+mutation DeleteDonationTier($tierId: String!) {
+  deleteDonationTier(tierId: $tierId)
+}

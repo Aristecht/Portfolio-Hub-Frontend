@@ -1,0 +1,9 @@
+query GetPayoutSettings {
+  getPayoutSettings {
+    method
+    kaspiPhone
+    cardNumber
+    cardHolder
+    iban
+  }
+}

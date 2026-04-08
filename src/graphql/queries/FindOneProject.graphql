@@ -1,0 +1,39 @@
+query findOneProject($projectId: String!) {
+  findOneProject(projectId: $projectId) {
+    id
+    title
+    description
+    likes
+    album {
+      id
+      title
+      user {
+        avatar
+        id
+        username
+        isFollowing
+        followers
+      }
+    }
+
+    albumId
+    isLiked
+    likedBy {
+      id
+      createdAt
+      user {
+        id
+        displayName
+        username
+        avatar
+      }
+    }
+    views
+    tags
+    media {
+      id
+      url
+      mediaType
+    }
+  }
+}

@@ -1,0 +1,12 @@
+mutation UpdateDonationTier($data: UpdateDonationTierInput!) {
+  updateDonationTier(data: $data) {
+    id
+    title
+    description
+    amount
+    currency
+    benefits
+    isActive
+    position
+  }
+}

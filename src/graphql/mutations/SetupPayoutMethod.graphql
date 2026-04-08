@@ -1,0 +1,6 @@
+mutation SetupPayoutMethod($data: SetupPayoutInput!) {
+  setupPayoutMethod(data: $data) {
+    method
+    success
+  }
+}

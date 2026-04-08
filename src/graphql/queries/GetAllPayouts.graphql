@@ -1,0 +1,26 @@
+query GetAllPayouts($data: HistoryPaymentInput!) {
+  getAllPayouts(data: $data) {
+    data {
+      id
+      amount
+      status
+      createdAt
+      user {
+        id
+        username
+      }
+      payoutDetails {
+        method
+        phone
+        card
+        iban
+      }
+    }
+    meta {
+      page
+      limit
+      total
+      totalPages
+    }
+  }
+}

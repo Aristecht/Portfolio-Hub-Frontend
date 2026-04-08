@@ -1,0 +1,12 @@
+mutation createProjectComment($data: CreateCommentInput!) {
+  createComment(data: $data) {
+    id
+    text
+    createdAt
+    user {
+      id
+      username
+      avatar
+    }
+  }
+}

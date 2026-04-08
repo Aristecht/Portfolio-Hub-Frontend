@@ -1,0 +1,3 @@
+mutation incrementProjectView($projectId: String!) {
+  incrementProjectView(projectId: $projectId)
+}

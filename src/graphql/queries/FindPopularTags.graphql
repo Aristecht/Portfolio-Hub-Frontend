@@ -1,0 +1,6 @@
+query popularTags($limit: Int!) {
+  popularTags(limit: $limit) {
+    count
+    tag
+  }
+}

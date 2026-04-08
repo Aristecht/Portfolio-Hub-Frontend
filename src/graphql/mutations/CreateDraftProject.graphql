@@ -1,0 +1,3 @@
+mutation CreateDraftProject($albumId: String!) {
+  createDraftProject(albumId: $albumId)
+}

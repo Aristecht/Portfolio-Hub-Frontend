@@ -1,0 +1,26 @@
+query findOneAlbum($id: String!) {
+  findOne(id: $id) {
+    id
+    title
+    thumbnailUrl
+    isPublic
+    projects {
+      id
+      title
+      isPublic
+      likes
+      commentsCount
+      tags
+      media {
+        id
+        mediaType
+        url
+      }
+    }
+    user {
+      id
+      username
+      avatar
+    }
+  }
+}

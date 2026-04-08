@@ -1,0 +1,8 @@
+mutation UpdateAlbum($data: UpdateAlbumInput!) {
+  updateAlbum(data: $data) {
+    thumbnailUrl
+    title
+    isPublic
+    id
+  }
+}

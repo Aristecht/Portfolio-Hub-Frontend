@@ -1,0 +1,48 @@
+query getChannel($username: String!) {
+  getChannel(username: $username) {
+    avatar
+    id
+    username
+    bio
+    displayName
+    createdAt
+    isFollowing
+    socialLinks {
+      id
+      title
+      url
+      position
+    }
+    stats {
+      albumsCount
+      followersCount
+      followingCount
+      projectsCount
+      totalLikes
+      totalViews
+    }
+    albums {
+      id
+      isPublic
+      projectsCount
+      thumbnailUrl
+      title
+    }
+    projects {
+      id
+      title
+      description
+      isPublic
+      tags
+      commentsCount
+      thumbnailUrl
+      views
+      likes
+      media {
+        id
+        url
+        mediaType
+      }
+    }
+  }
+}

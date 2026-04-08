@@ -1,0 +1,9 @@
+mutation CreateAlbum($data: CreateAlbumInput!) {
+  createAlbum(data: $data) {
+    thumbnailUrl
+    title
+    isPublic
+    createdAt
+    id
+  }
+}

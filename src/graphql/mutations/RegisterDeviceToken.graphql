@@ -1,0 +1,3 @@
+mutation RegisterDeviceToken($data: RegisterDeviceTokenInput!) {
+  registerDeviceToken(data: $data)
+}

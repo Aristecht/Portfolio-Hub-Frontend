@@ -1,0 +1,7 @@
+mutation ApprovePayout($payoutId: String!, $transactionId: String!) {
+  approvePayout(payoutId: $payoutId, transactionId: $transactionId) {
+    payoutId
+    amount
+    success
+  }
+}

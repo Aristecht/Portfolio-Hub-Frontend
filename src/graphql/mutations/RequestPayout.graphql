@@ -1,0 +1,9 @@
+mutation RequestPayout {
+  requestPayout {
+    payoutId
+    amount
+    method
+    status
+    message
+  }
+}

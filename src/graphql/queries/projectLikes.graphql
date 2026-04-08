@@ -1,0 +1,12 @@
+query projectLikes($projectId: String!) {
+  projectLikes(projectId: $projectId) {
+    id
+    createdAt
+    user {
+      id
+      username
+      displayName
+      avatar
+    }
+  }
+}

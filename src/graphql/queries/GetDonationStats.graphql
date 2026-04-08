@@ -1,0 +1,9 @@
+query GetDonationStats {
+  getDonationStats {
+    donationsGivenCount
+    donationsReceivedCount
+    totalGiven
+    totalReceived
+    uniqueDonorsCount
+  }
+}

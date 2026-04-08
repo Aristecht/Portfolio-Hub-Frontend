@@ -1,0 +1,19 @@
+query findFollowers($data: FindFollowers!) {
+  findFollowers(data: $data) {
+    data {
+      follower {
+        id
+        username
+        avatar
+      }
+
+      followerId
+    }
+    meta {
+      limit
+      page
+      total
+      totalPages
+    }
+  }
+}

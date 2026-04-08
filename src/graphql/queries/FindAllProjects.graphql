@@ -1,0 +1,23 @@
+query findAllProjects($filter: FilterProjectInput!) {
+  findAllProject(filter: $filter) {
+    data {
+      id
+      title
+      description
+      likes
+      views
+      tags
+      media {
+        id
+        url
+        mediaType
+      }
+    }
+    meta {
+      limit
+      page
+      total
+      totalPages
+    }
+  }
+}

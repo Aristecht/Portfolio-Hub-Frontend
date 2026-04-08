@@ -1,0 +1,3 @@
+mutation removeAlbum($id: String!) {
+  removeAlbum(id: $id)
+}

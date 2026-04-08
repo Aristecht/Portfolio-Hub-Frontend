@@ -1,0 +1,3 @@
+mutation RejectPayout($payoutId: String!, $reason: String!) {
+  rejectPayout(payoutId: $payoutId, reason: $reason)
+}

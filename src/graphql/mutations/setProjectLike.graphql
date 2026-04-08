@@ -1,0 +1,17 @@
+mutation setProjectLike($projectId: String!, $like: Boolean!) {
+  setProjectLike(projectId: $projectId, like: $like) {
+    id
+    likes
+    isLiked
+    likedBy {
+      id
+      createdAt
+      user {
+        id
+        username
+        displayName
+        avatar
+      }
+    }
+  }
+}

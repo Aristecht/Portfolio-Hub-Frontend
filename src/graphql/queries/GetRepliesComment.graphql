@@ -1,0 +1,23 @@
+query getCommentReplies($data: GetRepliesInput!) {
+  getRepliesComment(data: $data) {
+    data {
+      text
+      id
+      user {
+        id
+        avatar
+        username
+      }
+      replies {
+        id
+        text
+        user {
+          id
+          username
+        }
+      }
+      parentId
+      createdAt
+    }
+  }
+}

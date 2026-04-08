@@ -1,0 +1,6 @@
+query GetEarnOnFee {
+  getEarnOnFee {
+    totalPlatformFee
+    totalReceived
+  }
+}

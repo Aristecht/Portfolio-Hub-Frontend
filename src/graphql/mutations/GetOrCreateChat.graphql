@@ -1,0 +1,29 @@
+mutation GetOrCreateChat($userId: String!) {
+  getOrCreateChat(userId: $userId) {
+    id
+    chatMembers {
+      user {
+        id
+        username
+        displayName
+        avatar
+        lastSeenAt
+      }
+    }
+    messages {
+      id
+      chatId
+      senderId
+      text
+      isRead
+      isEdited
+      createdAt
+      sender {
+        id
+        username
+        displayName
+        avatar
+      }
+    }
+  }
+}

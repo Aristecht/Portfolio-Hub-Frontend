@@ -1,0 +1,11 @@
+mutation CreatePayment($data: CreatePaymentInput!) {
+  createPayment(data: $data) {
+    paymentId
+    paymentUrl
+    amount
+    method
+    expiresAt
+    qrCode
+    webUrl
+  }
+}

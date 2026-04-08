@@ -1,0 +1,8 @@
+mutation changeNotificationSettings($data: ChangeNotificationsSettingsInput!) {
+  changeNotificationSettings(data: $data) {
+    notificationSettings {
+      siteNotifications
+      pushNotifications
+    }
+  }
+}

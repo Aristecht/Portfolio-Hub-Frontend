@@ -1,0 +1,6 @@
+mutation StartProcessingPayout($payoutId: String!) {
+  startProcessingPayout(payoutId: $payoutId) {
+    status
+    success
+  }
+}

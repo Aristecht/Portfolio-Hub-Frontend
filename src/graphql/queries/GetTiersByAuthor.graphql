@@ -1,0 +1,12 @@
+query GetTiersByAuthor($username: String!) {
+  getTiersByAuthor(username: $username) {
+    id
+    title
+    description
+    amount
+    currency
+    benefits
+    isActive
+    position
+  }
+}

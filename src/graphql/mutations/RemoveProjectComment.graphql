@@ -1,0 +1,3 @@
+mutation removeProjectComment($id: String!) {
+  removeComment(id: $id)
+}

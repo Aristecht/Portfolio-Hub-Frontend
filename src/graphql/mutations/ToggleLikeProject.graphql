@@ -1,0 +1,17 @@
+mutation toggleLikeProject($projectId: String!) {
+  toggleLike(projectId: $projectId) {
+    id
+    likes
+    isLiked
+    likedBy {
+      id
+      createdAt
+      user {
+        id
+        displayName
+        username
+        avatar
+      }
+    }
+  }
+}

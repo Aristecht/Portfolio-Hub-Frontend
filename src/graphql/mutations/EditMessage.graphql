@@ -1,0 +1,7 @@
+mutation EditMessage($data: EditMessageInput!) {
+  editMessage(data: $data) {
+    id
+    text
+    isEdited
+  }
+}

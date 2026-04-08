@@ -1,0 +1,21 @@
+query GetMyChats {
+  getMyChats {
+    id
+    unreadCount
+    updatedAt
+    lastMessage {
+      id
+      text
+      createdAt
+      senderId
+    }
+    members {
+      id
+      username
+      displayName
+      avatar
+      isOnline
+      lastSeenAt
+    }
+  }
+}

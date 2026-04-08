@@ -1,0 +1,23 @@
+query findCommentsByProject($projectId: String!, $page: Int!, $limit: Int!) {
+  findCommentByProject(
+    filter: { projectId: $projectId, page: $page, limit: $limit }
+  ) {
+    data {
+      id
+      text
+      createdAt
+      repliesCount
+      user {
+        id
+        username
+        avatar
+      }
+    }
+    meta {
+      page
+      limit
+      total
+      totalPages
+    }
+  }
+}

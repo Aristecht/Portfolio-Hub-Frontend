@@ -1,0 +1,25 @@
+query GetChatMessages($data: getChatMessagesInput!) {
+  getChatMessages(data: $data) {
+    data {
+      id
+      chatId
+      senderId
+      text
+      isRead
+      isEdited
+      createdAt
+      sender {
+        id
+        username
+        displayName
+        avatar
+      }
+    }
+    meta {
+      total
+      totalPages
+      page
+      limit
+    }
+  }
+}

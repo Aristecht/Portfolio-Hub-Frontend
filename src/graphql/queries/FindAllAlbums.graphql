@@ -1,0 +1,22 @@
+query findAllAlbums($filter: FilterAlbumInput!) {
+  findAllAlbums(filter: $filter) {
+    data {
+      id
+      title
+      projectCount
+      thumbnailUrl
+      isPublic
+      user {
+        avatar
+        id
+        username
+      }
+    }
+    meta {
+      limit
+      page
+      totalPages
+      total
+    }
+  }
+}

@@ -1,0 +1,18 @@
+mutation UpdateProject($data: UpdateProjectInput!) {
+  updateProject(data: $data) {
+    albumId
+    tags
+    title
+    description
+    id
+    views
+    commentsCount
+    likes
+    media {
+      mediaType
+      projectId
+      url
+    }
+    views
+  }
+}

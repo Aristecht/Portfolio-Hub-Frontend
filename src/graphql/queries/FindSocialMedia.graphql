@@ -1,0 +1,8 @@
+query findSocialMedia {
+  findSocialMedia {
+    title
+    url
+    position
+    id
+  }
+}

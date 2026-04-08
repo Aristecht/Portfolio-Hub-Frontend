@@ -1,0 +1,33 @@
+query GetPaymentHistory($data: HistoryPaymentInput!) {
+  getPaymentHistory(data: $data) {
+    data {
+      id
+      amount
+      currency
+      status
+      paymentMethod
+      isAnonymous
+      message
+      createdAt
+      paidAt
+      donor {
+        id
+        username
+        displayName
+        avatar
+      }
+      recipient {
+        id
+        username
+        displayName
+        avatar
+      }
+    }
+    meta {
+      total
+      page
+      limit
+      totalPages
+    }
+  }
+}

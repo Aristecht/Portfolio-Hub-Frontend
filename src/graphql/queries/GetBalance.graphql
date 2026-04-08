@@ -1,0 +1,7 @@
+query GetBalance {
+  getBalance {
+    availableBalance
+    totalPaidOut
+    totalReceived
+  }
+}

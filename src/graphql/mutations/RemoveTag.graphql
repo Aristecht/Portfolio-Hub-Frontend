@@ -1,0 +1,3 @@
+mutation removeTag($data: RemoveTagInput!) {
+  removeTag(data: $data)
+}

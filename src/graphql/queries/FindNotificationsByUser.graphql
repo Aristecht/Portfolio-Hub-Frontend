@@ -1,0 +1,21 @@
+query FindNotificationsByUser($page: Int, $limit: Int) {
+  findNotificationsByUser(data: { page: $page, limit: $limit }) {
+    data {
+      id
+      message
+      type
+      isRead
+      createdAt
+      actorId
+      albumId
+      projectId
+      commentId
+    }
+    meta {
+      page
+      limit
+      total
+      totalPages
+    }
+  }
+}

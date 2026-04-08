@@ -1,0 +1,18 @@
+mutation CreateProject($data: CreateProjectInput!) {
+  createProject(data: $data) {
+    albumId
+    tags
+    title
+    description
+    createdAt
+    id
+    likes
+    commentsCount
+    views
+    media {
+      mediaType
+      projectId
+      url
+    }
+  }
+}
