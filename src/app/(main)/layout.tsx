@@ -8,7 +8,6 @@ import { AppSidebar } from "@/components/elements/AppSidebar";
 import { Footer } from "@/components/elements/Footer";
 import { Navbar } from "@/components/elements/Navbar";
 import { getTranslations } from "next-intl/server";
-import { AuthGuard } from "./AuthGuard";
 
 export default async function MainLayout({
   children,
@@ -21,9 +20,7 @@ export default async function MainLayout({
       <AppSidebar />
       <SidebarInset>
         <Navbar mobileSlot={<SidebarTrigger tooltip={t("sidebar")} />} />
-        <main className="flex-1">
-          <AuthGuard>{children}</AuthGuard>
-        </main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </SidebarInset>
     </SidebarProvider>
